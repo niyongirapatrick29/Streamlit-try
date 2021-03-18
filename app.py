@@ -24,7 +24,7 @@ def loaddata(nrows):
     data.rename(lowercase, axis=1, inplace=True)
     data.rename(columns={'accident date_accident time':'date/line'}, inplace=True)
     return data
-data = loaddata(10000)
+data = loaddata(1000)
 original_data = data
 st.header('Where are the most people injured in NYC')
 injured_people = st.slider("Number of persons injured in vehicle collision",0,19)
